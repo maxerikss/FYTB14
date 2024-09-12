@@ -1,8 +1,8 @@
-PWD /Users/maxeriksson/Programming/LaTeX/FYTB14/Hand_In_1
+PWD /Users/maxeriksson/Programming/University/FYTB14/Hand_In_1
 INPUT /usr/local/texlive/2023/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/maxeriksson/Programming/LaTeX/FYTB14/Hand_In_1/main.tex
+INPUT /Users/maxeriksson/Programming/University/FYTB14/Hand_In_1/main.tex
 OUTPUT output/main.log
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls

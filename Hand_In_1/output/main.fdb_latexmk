@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1725851567 "/Users/maxeriksson/Programming/LaTeX/FYTB14/Hand_In_1/main.tex" "output/main.pdf" "main" 1725851568 0
-  "/Users/maxeriksson/Programming/LaTeX/FYTB14/Hand_In_1/main.tex" 1725699008 438 a594ec242c3689e335d5a2be2ea58f7f ""
+["pdflatex"] 1726138229 "/Users/maxeriksson/Programming/University/FYTB14/Hand_In_1/main.tex" "output/main.pdf" "main" 1726138230 0
+  "/Users/maxeriksson/Programming/University/FYTB14/Hand_In_1/main.tex" 1726138179 438 a594ec242c3689e335d5a2be2ea58f7f ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -205,11 +205,11 @@
   "format/lund.png" 1725299057 81171 22b3646e59f567a752239fb251b719cf ""
   "format/preamble.tex" 1725694997 2137 1f213aaee2527750d5a2e774e828f8b4 ""
   "format/titlepage.tex" 1725698949 549 212c1d8c2d79f86ec8a3312c6206c857 ""
-  "main.tex" 1725699008 438 a594ec242c3689e335d5a2be2ea58f7f ""
-  "output/format/titlepage.aux" 1725851568 995 3b6443d8dd13b85a650de0a73dd693a0 "pdflatex"
-  "output/main.aux" 1725851568 1816 cdfbe4f05274646400581924420c41c0 "pdflatex"
-  "output/main.out" 1725851568 195 67d1c28db484fca23ecb3df93fc0c7c2 "pdflatex"
-  "paper/Exercise1.tex" 1725851567 6785 0637c5dd9bcf5f4fd0c7eaca92291902 ""
+  "main.tex" 1726138179 438 a594ec242c3689e335d5a2be2ea58f7f ""
+  "output/format/titlepage.aux" 1726138230 995 3b6443d8dd13b85a650de0a73dd693a0 "pdflatex"
+  "output/main.aux" 1726138230 1816 cdfbe4f05274646400581924420c41c0 "pdflatex"
+  "output/main.out" 1726138230 195 67d1c28db484fca23ecb3df93fc0c7c2 "pdflatex"
+  "paper/Exercise1.tex" 1726138228 6782 a27522f2f3ee556e9f1059ae370e7410 ""
   (generated)
   "output/format/titlepage.aux"
   "output/main.aux"
