@@ -1,6 +1,123 @@
 \section{First Exercise}
 \paragraph{Problem:} Three identical springs are connected in a row and then attached between a pair of walls. Two identical masses are attached at the connection points between the central spring and the two others. Using Lagrangian Mechanics, determine the frequencies for horizontal longitudinal vibrations.
 
-\paragraph{Solution:} 
+\paragraph{Solution:} Assuming the springs are massless and of length $l$ with a spring constant $k$, we can describe the system by setting the coordinate for the left mass to $x_1$ and the right mass $x_2$. Then by putting the origin at the left wall and the the distance $L$ between the walls we obtain the figure below.
 
-\paragraph{Answer:}
+\begin{figure}[H]
+    \centering
+    \input{figures/problem.pdf_tex}
+    \caption{Problem setup}
+\end{figure}
+
+The kinetic energy of the system is the sum of the kinetic energy of the two masses.
+\begin{equation*}
+    T = \frac{1}{2} m ( \dot{x}_1^2 + \dot{x}_2^2 )
+\end{equation*}
+The potential is the sum of the potentials for the different springs
+\begin{align*}
+    V_\mathrm{left} &= \frac{1}{2} k (x_1 - l)^2\\
+    V_\mathrm{middle} &= \frac{1}{2} k (x_2 - x_1 - l)^2\\
+    V_\mathrm{right} &= \frac{1}{2} k (L - x_1 - l)^2
+\end{align*}
+Thus the Lagrangian is 
+\begin{equation*}
+    \mathcal{L} = T - V_\mathrm{left} - V_\mathrm{middle} -V_\mathrm{right} = \frac{1}{2} m ( \dot{x}_1^2 + \dot{x}_2^2 ) - \frac{1}{2} k [ (x_1 - l)^2 + (x_2 - x_1 - l)^2 + (L - x_2 - k)^2  ]
+\end{equation*}
+
+Setting up the Euler-Lagrange equation 
+\begin{equation*}
+    \frac{\partial \mathcal{L}}{\partial x_i} = \frac{\dd}{\dd t} \left( \frac{\partial \mathcal{L}}{\partial \dot{x}_i} \right) \quad \text{for } i = 1, 2
+\end{equation*}
+we obtain the system of equations
+\begin{equation*}
+    \left\{\begin{array}{@{}>{\displaystyle}l@{}}
+        k (2 x_1 - x_2) = m \ddot{x}_1\\
+        k(2 x_2 - x_1 - L) = m \ddot{x}_2
+    \end{array}\right.
+\end{equation*}
+The equilibrium for the masses occur when $\ddot{x}_1 = \ddot{x}_2 = 0$ and since $k \neq 0$ we get the equilibrium points $x_1^0$ and $x_2^0$ when
+\begin{equation*}
+    \left\{\begin{array}{@{}>{\displaystyle}l@{}}
+        2 x_1^0 - x_2^0 = 0\\
+        2 x_2^0 - x_1^0 - L = 0
+    \end{array}\right.
+    \iff 
+    \left\{\begin{array}{@{}>{\displaystyle}l@{}}
+        x_2^0 = \frac{2L}{3}\\[8pt]
+        3x_1^0 = \frac{L}{3}
+    \end{array}\right.
+\end{equation*}
+Doing a change of coordinates
+\begin{equation*}
+    \left\{\begin{array}{@{}>{\displaystyle}l@{}}
+        x_1 \to u_1 = x_1 - x_1^0 = x_1 - \frac{L}{3}\\[8pt]
+        x_2 \to u_2 = x_2 - x_2^0 = x_2 - \frac{2L}{3}
+    \end{array}\right. 
+    \iff
+    \left\{\begin{array}{@{}>{\displaystyle}l@{}}
+        \ddot{x}_1 = \ddot{u}_1 \\[8pt]
+        \ddot{x}_2 = \ddot{u}_2 
+    \end{array}\right. 
+\end{equation*}
+gives us the system
+\begin{equation*}
+    \left\{\begin{array}{@{}>{\displaystyle}l@{}}
+        k (2 u_1 - u_2) = m \ddot{u}_1\\
+        k(2 u_2 - u_1) = m \ddot{u}_2
+    \end{array}\right.
+    \iff
+    \left\{\begin{array}{@{}>{\displaystyle}l@{}}
+        \ddot{u}_1 = \frac{k}{m} (2 u_1 - u_2) \\[8pt]
+        \ddot{u}_2 = \frac{k}{m} (2 u_2 - u_1)
+    \end{array}\right.
+\end{equation*}
+Doing the ansatz $u_i = C_i e^{i\omega t}$ we can write the system as a matrix equation
+\begin{equation*}
+    -\omega^2 \begin{bmatrix}
+        C_1\\
+        C_2
+    \end{bmatrix}
+    = \frac{k}{m}
+    \begin{bmatrix}
+        2 & -1\\
+        -1 & 2
+    \end{bmatrix}
+    \begin{bmatrix}
+        C_1\\
+        C_2
+    \end{bmatrix}
+    \iff
+    \left( 
+    \frac{k}{m}
+    \begin{bmatrix}
+        2 & -1\\
+        -1 & 2
+    \end{bmatrix}
+    +
+    \omega^2
+    \mathbb{I}
+    \right) 
+    \begin{bmatrix}
+        C_1\\
+        C_2
+    \end{bmatrix} = 0.
+\end{equation*} 
+It then follows that 
+\begin{equation*}
+    0 =
+    \begin{vmatrix}
+    2k/m + \omega^2 & -k/m\\
+    -k/m & 2k/m + \omega^2
+    \end{vmatrix}
+    = \left(\frac{2k}{m} + \lambda\right)^2 - \frac{k^2}{m^2} = \omega^4 -\frac{4k}{m} \omega^2 + \frac{3k^2}{m^2}.
+\end{equation*}
+The pq-formula then gives 
+\begin{equation*}
+    \omega^2 = \frac{2k}{m} \pm \frac{k}{m} \iff \omega_1 = \sqrt{\frac{k}{m}},\: \omega_2 = \sqrt{\frac{3k}{m}}
+\end{equation*}
+
+\paragraph{Answer:} The vibrational frequencies are 
+\begin{align*}
+    \omega_1 &= \sqrt{\frac{k}{m}}\\[8pt]
+    \omega_2 &= \sqrt{\frac{3k}{m}}
+\end{align*}
