@@ -26,12 +26,12 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.8190144"
-     inkscape:cx="386.7479"
-     inkscape:cy="197.08475"
+     inkscape:zoom="6.6560535"
+     inkscape:cx="492.10842"
+     inkscape:cy="212.81379"
      inkscape:window-width="1440"
      inkscape:window-height="786"
-     inkscape:window-x="0"
+     inkscape:window-x="1"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
@@ -273,35 +273,35 @@
     <text
        xml:space="preserve"
        style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;paint-order:stroke fill markers"
-       x="68.449135"
-       y="58.936604"
+       x="71.099098"
+       y="58.844795"
        id="text19-4"><tspan
          sodipodi:role="line"
          id="tspan19-3"
          style="stroke-width:0.15"
-         x="68.449135"
-         y="58.936604">$k$</tspan></text>
+         x="71.099098"
+         y="58.844795">$k$</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;paint-order:stroke fill markers"
-       x="101.98491"
-       y="58.964046"
+       x="104.63487"
+       y="58.884544"
        id="text19-4-2"><tspan
          sodipodi:role="line"
          id="tspan19-3-1"
          style="stroke-width:0.15"
-         x="101.98491"
-         y="58.964046">$k$</tspan></text>
+         x="104.63487"
+         y="58.884544">$k$</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;paint-order:stroke fill markers"
-       x="133.00771"
-       y="58.964046"
+       x="135.65768"
+       y="58.884544"
        id="text19-4-0"><tspan
          sodipodi:role="line"
          id="tspan19-3-9"
          style="stroke-width:0.15"
-         x="133.00771"
-         y="58.964046">$k$</tspan></text>
+         x="135.65768"
+         y="58.884544">$k$</tspan></text>
   </g>
 </svg>
