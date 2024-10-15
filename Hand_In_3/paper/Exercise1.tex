@@ -6,7 +6,21 @@
 \end{equation*}
 (where $\gamma(v) \equiv  1/\sqrt{1 - v^2 / c^2} $). Show this formula and motivate well.
 
-\paragraph{Solution:}
+\paragraph{Solution:} Let the first particle be in rest. Letting $u_1$ and $u_2$ be the four-velocities then
+\begin{align*}
+    u_1 &= \gamma(0) (c, \vec{0})\\
+    u_2 &= \gamma(v) (c, \vec{v}).
+\end{align*}
+Since $\gamma(0) = 1$ we can write the four-momentum as
+\begin{align*}
+    P_1 &= m_1 u_1 = m_1 (c, \vec{0})\\
+    P_2 &= m_2 u_2 = m_2 \gamma(v) (c, \vec{v}).
+\end{align*}
+The calculation is therefore
+\begin{align*}
+    P_1 \cdot P_2 &= m_1 m_2 \gamma(v) (c, \vec{0}) \cdot (c, \vec{v}) = m_1 m_2 \gamma(v) (c^2 - \vec{0} \cdot \vec{v}) = m_1 m_2 c^2 \gamma(v)
+\end{align*}
+\qedsymbol
 
 \subsection{b}
 \paragraph{Problem:} Consider a particle A at rest, decaying into two particles B and C. Use suitable invariants to show that the velocity of B is determined by
@@ -14,12 +28,19 @@
     \gamma(v_B) = \frac{m^2_A + m^2_B - m^2_C}{2 m_A m_B}
 \end{equation*}
 
-\paragraph{Solution:}
+\paragraph{Solution:} Before the collision we have the four momentum
+\begin{equation*}
+    P_A = (E_A/c, \vec{0})
+\end{equation*}
+where $E_A = m_A c^2$ and thus
+\begin{equation*}
+    P_A = m_A c (1, \vec{0})
+\end{equation*}
 
 \subsection{c}
 \paragraph{Problem:} Imagine that we can fuel a rocket with an ideal fuel, all of whose mass is converted to energy, leaving only massless exhaust that is released straight backwards. A rocket, that initially is at rest, is packed with ideal fuel. The fuel makes up a fraction $\alpha$ of the
 loaded rocket's total mass. Derive the maximum velocity of the empty rocket after burning all the
-fuel, as a function of $\alpha$. (\textit{Answer}: $v = c \frac{1- (1-\alpha)^2}{1+ (1-\alpha)^2}$ . \textit{Hint}: Consider the process as a “decay”.)
+fuel, as a function of $\alpha$. (\textit{Answer}: $v = c \frac{1- (1-\alpha)^2}{1+ (1-\alpha)^2}$ . \textit{Hint}: Consider the process as a ``decay''.)
 
 
 \paragraph{Solution:}
