@@ -28,7 +28,7 @@ The calculation is therefore
     \gamma(v_B) = \frac{m^2_A + m^2_B - m^2_C}{2 m_A m_B}
 \end{equation*}
 
-\paragraph{Solution:} Before the collision we have the four momentum
+\paragraph{Solution:} In the center of momentum frame (CM-frame). Before the collision we have the four-momentum
 \begin{equation*}
     P_A = (E_A/c, \vec{0})
 \end{equation*}
@@ -37,10 +37,53 @@ where $E_A = m_A c^2$ and thus
     P_A = m_A c (1, \vec{0})
 \end{equation*}
 
+Using the relation between four-momentum and four-velocity,after the collision we have the four-momenta
+\begin{align*}
+    P_B &= m_B u_B = m_B \gamma(v_B) (c, \vec{v}_B)\\
+    P_C &= m_C u_C = m_C \gamma(v_C) (c, \vec{v}_C)
+\end{align*}
+where $u_B, u_C$ are the four-velocities and $v_B, v_C$ are the three-velocities. Since the four-momentum is conserved we get that 
+\begin{equation*}
+    P_A = P_B + P_C \iff P_C = P_A - P_B
+\end{equation*} 
+Squaring both sides yields
+\begin{align*}
+    P_C^2 &= P_A^2 + P_B^2 - 2 P_A \cdot P_B\\
+    \iff m_C^2 c^2  &= m_A^2 c^2 + m_B^2 c^2 - 2 P_A \cdot P_B\\
+\end{align*}
+Since A is stationary in the frame of reference, the relative velocity between A and B is $v_B$. Thus we can use the result from a) which gives us
+\begin{align*}
+    m_C^2 c^2 &= m_A^2 c^2 + m_B^2 c^2 - 2 m_A m_B c^2 \gamma(v_B)\\
+    \iff 2 m_A m_B \gamma(v_B) &= m_A^2 + m_B^2 - m_C^2\\
+    \iff \gamma(v_B) &= \frac{m_A^2 + m_B^2 - m_C^2}{2 m_A m_B}
+\end{align*}
+\qedsymbol
+
 \subsection{c}
 \paragraph{Problem:} Imagine that we can fuel a rocket with an ideal fuel, all of whose mass is converted to energy, leaving only massless exhaust that is released straight backwards. A rocket, that initially is at rest, is packed with ideal fuel. The fuel makes up a fraction $\alpha$ of the
 loaded rocket's total mass. Derive the maximum velocity of the empty rocket after burning all the
 fuel, as a function of $\alpha$. (\textit{Answer}: $v = c \frac{1- (1-\alpha)^2}{1+ (1-\alpha)^2}$ . \textit{Hint}: Consider the process as a ``decay''.)
 
 
-\paragraph{Solution:}
+\paragraph{Solution:} Let the rocket be stationary and of mass $m$ before burning any fuel. Then after burning the mass of the rocket is $m(1 - \alpha)$. Writing the four-momenta before and after the burning gives
+\begin{align*}
+    P_\text{initial} &= m (c, \vec{0})\\
+    P_\text{final} &= m(1-\alpha) (c, \vec{v})\\
+    P_\text{exhaust} &= \vec{0}
+\end{align*}
+Assuming the burning of the fuel is instant, we can model the rocket as a decay reaction. Using the result from b) where A is the rocket before burning any fuel, B is the rocket after burning fuel, and C is the massless exhaust, we obtain
+\begin{align*}
+    \gamma(v) &= \frac{m^2 + m^2(1-\alpha)^2 - 0}{2 m^2(1-\alpha)}\\
+    \frac{1}{\sqrt{1 - v^2 / c^2}} &= \frac{1 + (1-\alpha)^2}{2 (1 -\alpha)}\\
+    \frac{2 (1 - \alpha)}{1 + (1- \alpha)^2} &= \sqrt{1 - v^2 / c^2}\\
+    \frac{4 (1- \alpha)^2}{1 + 2(1 - \alpha)^2 + (1 - \alpha)^4} &= 1 - v^2 / c^2\\
+    v^2 &= c^2 - c^2 \frac{4 (1- \alpha)^2}{1 + 2(1 - \alpha)^2 + (1 - \alpha)^4}\\
+    v^2 &= c^2 \left[ \frac{1 + 2(1 - \alpha)^2 + (1 - \alpha)^4}{1 + 2(1 - \alpha)^2 + (1 - \alpha)^4} - \frac{4 (1- \alpha)^2}{1 + 2(1 - \alpha)^2 + (1 - \alpha)^4}\right]\\
+    v^2 &= c^2  \frac{1 - 2(1 - \alpha)^2 + (1 - \alpha)^4}{1 + 2(1 - \alpha)^2 + (1 - \alpha)^4} = c^2 \frac{\left[ 1 - (1 - \alpha)^2 \right]^2}{\left[ 1 + (1 - \alpha)^2 \right]^2}\\
+    v &= c \frac{ 1 - (1 - \alpha)^2}{1 + (1 - \alpha)^2}
+\end{align*}
+
+\paragraph{Answer:} The maximum velocity as of the empty rocket as a function of $\alpha$ is 
+\begin{equation*}
+    v(\alpha) = c \frac{ 1 - (1 - \alpha)^2}{1 + (1 - \alpha)^2}.
+\end{equation*}
